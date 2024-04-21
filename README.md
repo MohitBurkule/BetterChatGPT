@@ -102,11 +102,68 @@ If you'd like to run your own instance of Better ChatGPT, you can easily do so b
 
 1. Ensure that you have the following installed:
 
-   - [node.js](https://nodejs.org/en/)
-   - [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
+   - [node.js](https://nodejs.org/en/) (v14.18.0 or above)
+   - [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) (6.14.15 or above)
 
 2. Clone this [repository](https://github.com/ztjhz/BetterChatGPT) by running `git clone https://github.com/ztjhz/BetterChatGPT.git`
 3. Navigate into the directory by running `cd BetterChatGPT`
 4. Run `yarn` or `npm install`, depending on whether you have yarn or npm installed.
 5. Launch the app by running `yarn dev` or `npm run dev`
 
+### Running it locally using docker compose
+1. Ensure that you have the following installed:
+
+   - [docker](https://www.docker.com/) (v24.0.7 or above)
+      ```bash
+      curl https://get.docker.com | sh \
+      && sudo usermod -aG docker $USER
+      ```
+
+2. Build the docker image
+   ```
+   docker compose build
+   ```
+
+3. Build and start the container using docker compose
+   ```
+   docker compose build
+   docker compose up -d
+   ```
+
+4. Stop the container
+   ```
+   docker compose down
+   ```
+
+# ⭐️ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ztjhz/BetterChatGPT&type=Date)](https://github.com/ztjhz/BetterChatGPT/stargazers)
+
+<h3 align="center">
+A ⭐️ to <b>Better ChatGPT</b> is to make it shine brighter and benefit more people.
+</h3>
+
+# ❤️ Contributors
+
+Thanks to all the contributors!
+
+<a href="https://github.com/ztjhz/BetterChatGPT/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ztjhz/BetterChatGPT" />
+</a>
+
+# 🙏 Support
+
+At Better ChatGPT, we strive to provide you with useful and amazing features around the clock. And just like any project, your support and motivation will be instrumental in helping us keep moving forward!
+
+If you have enjoyed using our app, we kindly ask you to give this project a ⭐️. Your endorsement means a lot to us and encourages us to work harder towards delivering the best possible experience.
+
+If you would like to support the team, consider sponsoring us through one of the methods below. Every contribution, no matter how small, helps us to maintain and improve our service.
+
+| Payment Method | Link                                                                                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub         | [![GitHub Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/ztjhz) |
+| KoFi           | [![support](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/betterchatgpt)                                                             |
+| Alipay (Ayaka) | <img src="https://ayaka14732.github.io/sponsor/alipay.jpg" width=150 />                                                                              |
+| Wechat (Ayaka) | <img src="https://ayaka14732.github.io/sponsor/wechat.png" width=150 />                                                                              |
+
+Thank you for being a part of our community, and we look forward to serving you better in the future.
