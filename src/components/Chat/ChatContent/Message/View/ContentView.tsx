@@ -100,7 +100,7 @@ const ContentView = memo(
     };
 
     const handleCopy = () => {
-      navigator.clipboard.writeText((content[0] as TextContentInterface).text);
+      navigator.clipboard.writeText(((Array.isArray(content) ? content[0] : []) as TextContentInterface).text);
     };
 
     return (
@@ -129,14 +129,14 @@ const ContentView = memo(
                 p,
               }}
             >
-              {(content[0] as TextContentInterface).text}
+              {((Array.isArray(content) ? content[0] : []) as TextContentInterface).text}
             </ReactMarkdown>
           ) : (
-            <span className='whitespace-pre-wrap'>{(content[0] as TextContentInterface).text}</span>
+            <span className='whitespace-pre-wrap'>{((Array.isArray(content) ? content[0] : []) as TextContentInterface).text}</span>
           )}
         </div>
         <div className="flex gap-4">
-          {(content.slice(1) as ImageContentInterface[]).map((image, index) => (
+          {((Array.isArray(content) ? content.slice(1) : []) as ImageContentInterface[]).map((image, index) => (
             <div key={index} className="image-container">
               <img src={image.image_url.url} alt={`uploaded-${index}`} className="h-20" />
             </div>
